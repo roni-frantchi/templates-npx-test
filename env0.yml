@@ -1,0 +1,7 @@
+version: 1
+
+deploy:
+  terraformInit:
+    before:
+      - touch foo.json
+      - npx jq foo.json
