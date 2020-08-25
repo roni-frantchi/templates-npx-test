@@ -1,7 +1,8 @@
 version: 1
 
-
-terraformInit:
-  before:
-    - touch foo.json
-    - npx jq foo.json
+deploy:
+  steps:
+    terraformInit:
+      before:
+        - touch foo.json
+        - npx jq foo.json
