@@ -5,4 +5,5 @@ deploy:
     terraformInit:
       before:
         - echo 'export FOO=BAR' >> ~/.profile
+        - cat ~/.profile
         - echo $FOO
