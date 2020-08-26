@@ -4,6 +4,5 @@ deploy:
   steps:
     terraformInit:
       before:
-        - touch foo.json
-        - echo '{"hello":"there"}' >> foo.json
-        - jq foo.json
+        - echo 'export FOO=BAR' >> ~/.profile
+        - echo $FOO
