@@ -5,4 +5,5 @@ deploy:
     terraformInit:
       before:
         - touch foo.json
-        - npx jq foo.json
+        - echo {"hello":"there"}
+        - jq foo.json
