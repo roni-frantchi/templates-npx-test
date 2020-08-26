@@ -3,6 +3,9 @@ version: 1
 deploy:
   steps:
     terraformInit:
-      before: |
-        export FOO=BAR
-        echo $FOO
+      before:
+        - |
+          export FOO=BAR
+          echo $FOO
+        
+
