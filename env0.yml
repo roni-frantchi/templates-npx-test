@@ -5,8 +5,7 @@ deploy:
     terraformInit:
       before:
         - |
-          export FOO=BAR
-          echo $FOO
+          /opt/terratag
         
 
 
