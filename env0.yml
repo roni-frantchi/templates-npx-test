@@ -3,7 +3,7 @@ version: 1
 destroy:
   steps:
     terraformInit:
-      after:
+      before:
         - exit 1
         
 
