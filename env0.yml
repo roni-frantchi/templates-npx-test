@@ -2,7 +2,7 @@ version: 1
 
 destroy:
   steps:
-    terraformApply:
+    terraformPlan:
       before:
         - exit 1
         
