@@ -4,4 +4,4 @@ deploy:
   steps:
     terraformApply:
       before:
-        - if [ $(git branch --show-current) != 'master' ]; then echo 'You may only apply Terraform changes from master'; exit 1 ; fi
+        - cd /mnt/efs && ls
