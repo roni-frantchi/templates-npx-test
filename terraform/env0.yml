@@ -8,4 +8,4 @@ deploy:
         - mkdir /mnt/efs/private
         - chmod 700 /mnt/efs/private
         - chown 2000:2000 /mnt/efs/private
-        - touch /mnt/efs/private
+        - touch /mnt/efs/private/yaron
