@@ -4,4 +4,5 @@ deploy:
   steps:
     terraformApply:
       before:
-        - cd /mnt/efs && ls
+        - cd /mnt/efs && ls -la
+        - cd /mnt/efs && touch ohno
