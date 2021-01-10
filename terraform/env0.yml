@@ -5,4 +5,7 @@ deploy:
     terraformApply:
       before:
         - cd /mnt/efs && ls -n
-        - cd /mnt/efs && touch ohno
+        - mkdir /mnt/efs/private
+        - chmod 700 /mnt/efs/private
+        - chown 2000:2000 /mnt/efs/private
+        - touch /mnt/efs/private
