@@ -4,8 +4,5 @@ deploy:
   steps:
     terraformApply:
       before:
-        - cd /mnt/efs && ls -n
-        - mkdir /mnt/efs/roni
-        - chmod 700 /mnt/efs/roni
-        - chown 2000:2000 /mnt/efs/roni
-        - touch /mnt/efs/roni/me
+#        - cd /mnt/efs && ls -n
+         - echo noop
