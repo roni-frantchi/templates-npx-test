@@ -5,8 +5,8 @@ deploy:
     terraformApply:
       before: 
         - |
-          for i in {1..10}
-          do
-            echo wait for i...
-            sleep 5s
-          done
+          echo started
+          sleep 10s
+          echo after 10
+          sleep 10s
+          echo done          
