@@ -3,6 +3,9 @@ version: 1
 deploy:
   steps:
     terraformApply:
-      before:
-#        - cd /mnt/efs && ls -n
-         - echo noop
+      before: |
+        for i in {1..10}
+        do
+          echo wait for i...
+          sleep 5s
+        done
