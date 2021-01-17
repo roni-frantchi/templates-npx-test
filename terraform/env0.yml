@@ -6,7 +6,9 @@ deploy:
       before: 
         - |
           echo started
-          sleep 10s
-          echo after 10
-          sleep 10s
+          sleep 15s
+          echo after 15
+          sleep 15s          
+          echo after 30
+          sleep 15s
           echo done          
