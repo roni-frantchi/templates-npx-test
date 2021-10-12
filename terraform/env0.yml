@@ -2,13 +2,6 @@ version: 1
 
 deploy:
   steps:
-    terraformApply:
+    terraformInit:
       before: 
-        - |
-          echo started
-          sleep 15s
-          echo after 15
-          sleep 15s          
-          echo after 30
-          sleep 15s
-          echo done          
+        - date      
